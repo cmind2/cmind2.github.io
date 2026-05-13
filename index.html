@@ -1,209 +1,309 @@
-<!DOCTYPE html>
-
+      <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+<title>Portfolio du Groupe</title>
 
-    <title>Portfolio Groupe 4</title>
+<style>
 
-    <!-- Bootstrap -->
+body{
+    margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-image: url('c:\\Users\\Ce PC\\Downloads\\whatsApp image 2026-05-10 at 15.44.51.png');
+}
+h1{
+    color: white;
+    font-size: 50px;
+    background-color: rgba(52, 17, 169, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav h1{
+    color: white;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav ul li a:hover{
+    color: rgb(75, 155, 198);
+}
+.hero{
+    height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+}
+.hero h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.btn{
+    background: rgb(255, 255, 255);
+    color: #0a0b0c;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover{
+    color: rgb(53, 15, 226);
+}
+.membres{
+    background: #e7370b;
+    padding: 20px;
+}
+.titre{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: black;
+}
+.conteneur-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    background: rgb(231, 226, 226);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-body{
+    padding: 20px;
+}
+.card-title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contact{
+    background: #000;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.container{
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-    <style>
-
-        body {
-
-            background-color: #f2f2f2;
-
-        }
-
-        .card {
-
-            margin-top: 15px;
-
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-            transition: 0.3s;
-
-        }
-
-        .card:hover {
-
-            transform: translateY(-5px);
-
-        }
-
-        h1, h2 {
-
-            color: #333;
-
-        }
-
-    </style>
-
+</style>
 </head>
 
 <body>
-
-<nav class="navbar navbar-dark bg-dark">
-
-  <div class="container">
-
-    <span class="navbar-brand">Groupe n°4 - Salle Concombre</span>
-
-  </div>
-
-</nav>
-
-<div class="container text-center mt-5">
-
-    <h1>Bienvenue sur notre portfolio</h1>
-
-    <p>Nous sommes le groupe numéro 4 de la salle Concombre, étudiants en L1 Programmation à ESGAE.</p>
-
-</div>
-
-<div class="container mt-5">
-
-    <h2 class="text-center mb-4">Membres du groupe</h2>
-
-    <div class="row">
-
-        <div class="col-md-4">
-
-            <div class="card">
-
-                <img src="https://via.placeholder.com/200" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">YOKA ONIANGUE Emmanuel Junior</h5>
-
-                    <p>Âge : 20 ans</p>
-
-                    <p>L1 Programmation - ESGAE</p>
-
-                    <p>Tél : 065410971</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-4">
-
-            <div class="card">
-
-                <img src="https://via.placeholder.com/200" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">YINDA MASSAMBA Divin Verdy</h5>
-
-                    <p>Âge : 20 ans</p>
-
-                    <p>L1 Programmation - ESGAE</p>
-
-                    <p>Tél : 066782345</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-4">
-
-            <div class="card">
-
-                <img src="https://via.placeholder.com/200" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">NDINGHA Juste Blondy</h5>
-
-                    <p>Âge : 20 ans</p>
-
-                    <p>L1 Programmation - ESGAE</p>
-
-                    <p>Tél : 065998712</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-4">
-
-            <div class="card">
-
-                <img src="https://via.placeholder.com/200" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">GANGA Arcaduis Manacé</h5>
-
-                    <p>Âge : 20 ans</p>
-
-                    <p>L1 Programmation - ESGAE</p>
-
-                    <p>Tél : 066123890</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-4">
-
-            <div class="card">
-
-                <img src="https://via.placeholder.com/200" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">KINZONZI BIABOUNA Rayma</h5>
-
-                    <p>Âge : 20 ans</p>
-
-                    <p>L1 Programmation - ESGAE</p>
-
-                    <p>Tél : 065555555</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<div class="container mt-5">
-
-    <h2 class="text-center mb-4">Parcours académique</h2>
-
-    <ul class="list-group">
-
-        <li class="list-group-item">Tous les membres sont étudiants en L1 Programmation à ESGAE.</li>
-
+  <!-- Navbar -->
+  <nav class="nav">
+    <h1>portfolio</h1>
+        <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#membres">Membres</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
 
+  <!-- HERO -->
+  <div class="hero" id="accueil">
+    <h2>Nous sommes des Développeurs Web</h2>
+
+    <p>Nous sommes des étudiants à l'ecole superieur de gestion d'administration des entrepises (ESGAE)</p>
+
+    <a href="#membres" class="btn">
+        Voir les membres du groupe
+    </a>
 </div>
 
-<footer class="bg-dark text-white text-center p-3 mt-5">
+  <!-- SECTION MEMBRES -->
+<section id="membres" class="btn">
 
-    <p>© 2026 - Groupe n°4 Salle Concombre - ESGAE</p>
+    <h2 class="titre">Les Membres du Groupe</h2>
 
-</footer>
+    <div class="conteneur-cards">
+
+        <!-- Membre 1 -->
+        <div class="card">
+            <img src="c:\Users\Ce PC\Downloads\WhatsApp Image 2026-05-10 at 18.21.57.jpeg" class="card-img-top" alt="Membre 1">
+
+            <div class="card-body">
+                <h4 class="card-title">Membre 1</h4>
+
+                <p><strong>Nom :</strong> Kinzonzi BIABOUNA </p>
+                <p><strong>Prénom :</strong> RAYMA ESLY</p>
+                <p><strong>Âge :</strong> 20 ans</p>
+                <p><strong>Email :</strong> kinzray7@gmail.com</p>
+                <p><strong>Téléphone :</strong> +242 06 05 541 8437</p>
+                <p><strong>Adresse :</strong> Nkayi, Congo</p>
+
+                <h5>Parcours Académique</h5>
+
+                <ul>
+                    <li>Baccalauréat Scientifique</li>
+                    <li>Licence 1 Informatique</li>
+                    <li>Formation Développement Web</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Membre 2 -->
+        <div class="card">
+            <img src="c:\Users\Ce PC\Downloads\WhatsApp Image 2026-05-12 at 10.22.13.jpeg" class="card-img-top" alt="Membre 2">
+
+            <div class="card-body">
+                <h4 class="card-title">Membre 2</h4>
+
+                <p><strong>Nom :</strong> DINGHA SAFFA </p>
+                <p><strong>Prénom :</strong> juste</p>
+                <p><strong>Âge :</strong> 21 ans</p>
+                <p><strong>Email :</strong> justeblendydinghssaffa@gmail.com</p>
+                <p><strong>Téléphone :</strong> +242 06 501 1126</p>
+                <p><strong>Adresse :</strong> Bazzaville, Congo</p>
+
+                <h5>Parcours Académique</h5>
+
+                <ul>
+                    <li>Baccalauréat Scientifique</li>
+                    <li>Licence 1 Informatique</li>
+                    <li>Formation Développement Web</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Membre 3 -->
+        <div class="card">
+            <img src="c:\Users\Ce PC\Downloads\WhatsApp Image 2026-05-11 at 09.31.47.jpeg" class="card-img-top" alt="Membre 3">
+
+            <div class="card-body">
+                <h4 class="card-title">Membre 3</h4>
+
+                <p><strong>Nom :</strong> GANGA Arcaduis </p>
+                <p><strong>Prénom :</strong> Manassé</p>
+                <p><strong>Âge :</strong> 22 ans</p>
+                <p><strong>Email :</strong> manasseganga79@gmail.com</p>
+                <p><strong>Téléphone :</strong> +242 06 717 7293</p>
+                <p><strong>Adresse :</strong> Dolisie, Congo</p>
+
+                <h5>Parcours Académique</h5>
+
+                <ul>
+                    <li>Baccalauréat Scientifique</li>
+                    <li>Licence 1 Informatique</li>
+                    <li>Formation Développement Web</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Membre 4 -->
+        <div class="card">
+            <img src="c:\Users\Ce PC\Downloads\WhatsApp Image 2026-05-10 at 12.21.55.jpeg" class="card-img-top" alt="Membre 4">
+
+            <div class="card-body">
+                <h4 class="card-title">Membre 4</h4>
+
+                <p><strong>Nom :</strong> YOKA ONIANGUE</p>
+                <p><strong>Prénom :</strong> Emmanue Juniorl</p>
+                <p><strong>Âge :</strong> 22 ans</p>
+                <p><strong>Email :</strong> emmayoka@icloud.com</p>
+                <p><strong>Téléphone :</strong> +242 06 541 0971</p>
+                <p><strong>Adresse :</strong> Paris, France</p>
+
+                <h5>Parcours Académique</h5>
+
+                <ul>
+                    <li>Baccalauréat Scientifique</li>
+                    <li>Licence 1 Informatique</li>
+                    <li>Formation Développement Web</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Membre 5 -->
+        <div class="card">
+            <img src="c:\Users\Ce PC\Downloads\WhatsApp Image 2026-05-11 at 19.17.46 (1).jpeg" class="card-img-top" alt="Membre 5">
+
+            <div class="card-body">
+                <h4 class="card-title">Membre 5</h4>
+
+                <p><strong>Nom :</strong> YINDA MASSAMBA</p>
+                <p><strong>Prénom :</strong> VERDY</p>
+                <p><strong>Âge :</strong> 20 ans</p>
+                <p><strong>Email :</strong> verdyyinda@gmail.com</p>
+                <p><strong>Téléphone :</strong> +242 06 850 83 17</p>
+                <p><strong>Adresse :</strong> Barcelone, Espagne</p>
+
+                <h5>Parcours Académique</h5>
+
+                <ul>
+                    <li>Baccalauréat Scientifique</li>
+                    <li>Licence 1 Informatique</li>
+                    <li>Formation Développement Web</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Contact -->
+    <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact du Groupe</h2>
+      <p>Email : groupe@email.com</p>
+      <p>Téléphone : +242 06 999 9999</p>
+      <p>Adresse : Brazzaville, République du Congo</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p> © 2026 Portfolio Groupe - Tous droits réservés</p>
+  </footer>
 
 </body>
-
-</html>
+</html>           
